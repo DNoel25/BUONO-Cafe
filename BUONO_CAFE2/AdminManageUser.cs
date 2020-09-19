@@ -33,5 +33,12 @@ namespace BUONO_CAFE2
         {
 
         }
+
+        private void btnSeachUser_Click(object sender, EventArgs e)
+        {
+            SearchUser s = new SearchUser();
+            s.Show();
+            this.Hide();
+        }
     }
 }
