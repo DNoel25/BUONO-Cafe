@@ -195,6 +195,7 @@
             this.btnDeleteUser.TabIndex = 17;
             this.btnDeleteUser.Text = "DELETE";
             this.btnDeleteUser.UseVisualStyleBackColor = true;
+            this.btnDeleteUser.Click += new System.EventHandler(this.btnDeleteUser_Click);
             // 
             // txtDUser_id
             // 
