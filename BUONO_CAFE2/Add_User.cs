@@ -55,9 +55,45 @@ namespace BUONO_CAFE2
             else{
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    SqlDataAdapter sa = new SqlDataAdapter ("select")
+                    SqlDataAdapter da = new SqlDataAdapter("select User_id from Users_Table where User_id = '"+txtUser_id.Text +"'", con);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    if(dt.Rows.Count >= 1)
+                    {
+                        MessageBox.Show("Employee ID is already exist!!");
+                    }
+                    else
+                    {
+                        con.Open();
+                        SqlCommand cmd = new SqlCommand("Insert into Users_Table values(@User_id , @User_Name,@User_Password,@User_type,@user_Email,@User_NIC,@User_TNo)",con);
+                        cmd.Parameters.AddWithValue("@User_id",txtUser_id.Text);
+                        cmd.Parameters.AddWithValue("@User_Name", txtName.Text);
+                        cmd.Parameters.AddWithValue("@User_Password", txtPassword.Text);
+                        cmd.Parameters.AddWithValue("@User_Type", UserType );
+                        cmd.Parameters.AddWithValue("@User_Email", txtEmail.Text);
+                        cmd.Parameters.AddWithValue("@User_NIC", txtNIC.Text);
+                        cmd.Parameters.AddWithValue("@User_TNo", txtTNo.Text);
+
+                        int result = cmd.ExecuteNonQuery();
+                        con.Close();
+
+                        MessageBox.Show("New Employee added to the System","Saved" , MessageBoxButtons.OK);
+
+                        ResetFormControls();
+                    }
                 }
             }
+        }
+
+        private void ResetFormControls()
+        {
+            txtUser_id.Clear();
+            txtName.Clear();
+            txtPassword.Clear();
+            UserType = "";
+            txtEmail.Clear();
+            txtNIC.Clear();
+            txtTNo.Clear();
         }
 
         private bool IsEmailValid(string m)
@@ -118,6 +154,9 @@ namespace BUONO_CAFE2
             UserType = "Cashier";
         }
 
-
+        private void btnDeleteUser_Click(object sender, EventArgs e)
+        {
+             
+        }
     }
 }
