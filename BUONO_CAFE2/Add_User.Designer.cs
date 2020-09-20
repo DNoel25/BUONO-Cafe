@@ -39,7 +39,6 @@
             this.txtUser_id = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtType = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtNIC = new System.Windows.Forms.TextBox();
             this.txtTNo = new System.Windows.Forms.TextBox();
@@ -49,6 +48,9 @@
             this.txtDUser_id = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
+            this.rdoAdmin = new System.Windows.Forms.RadioButton();
+            this.rdoManager = new System.Windows.Forms.RadioButton();
+            this.rdoCashier = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -81,7 +83,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(120, 193);
+            this.label4.Location = new System.Drawing.Point(120, 352);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 17);
             this.label4.TabIndex = 3;
@@ -90,7 +92,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(120, 233);
+            this.label5.Location = new System.Drawing.Point(120, 198);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 17);
             this.label5.TabIndex = 4;
@@ -99,7 +101,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(120, 277);
+            this.label6.Location = new System.Drawing.Point(120, 249);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(30, 17);
             this.label6.TabIndex = 5;
@@ -108,7 +110,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(120, 321);
+            this.label7.Location = new System.Drawing.Point(120, 301);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(130, 17);
             this.label7.TabIndex = 6;
@@ -116,7 +118,7 @@
             // 
             // btnAddUser
             // 
-            this.btnAddUser.Location = new System.Drawing.Point(261, 374);
+            this.btnAddUser.Location = new System.Drawing.Point(161, 394);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(75, 23);
             this.btnAddUser.TabIndex = 7;
@@ -133,7 +135,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(283, 95);
+            this.txtName.Location = new System.Drawing.Point(283, 100);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(255, 22);
             this.txtName.TabIndex = 9;
@@ -145,37 +147,30 @@
             this.txtPassword.Size = new System.Drawing.Size(255, 22);
             this.txtPassword.TabIndex = 10;
             // 
-            // txtType
-            // 
-            this.txtType.Location = new System.Drawing.Point(283, 188);
-            this.txtType.Name = "txtType";
-            this.txtType.Size = new System.Drawing.Size(255, 22);
-            this.txtType.TabIndex = 11;
-            // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(283, 228);
+            this.txtEmail.Location = new System.Drawing.Point(283, 195);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(255, 22);
             this.txtEmail.TabIndex = 12;
             // 
             // txtNIC
             // 
-            this.txtNIC.Location = new System.Drawing.Point(283, 272);
+            this.txtNIC.Location = new System.Drawing.Point(283, 246);
             this.txtNIC.Name = "txtNIC";
             this.txtNIC.Size = new System.Drawing.Size(255, 22);
             this.txtNIC.TabIndex = 13;
             // 
             // txtTNo
             // 
-            this.txtTNo.Location = new System.Drawing.Point(283, 316);
+            this.txtTNo.Location = new System.Drawing.Point(283, 296);
             this.txtTNo.Name = "txtTNo";
             this.txtTNo.Size = new System.Drawing.Size(255, 22);
             this.txtTNo.TabIndex = 14;
             // 
             // btnFormClear
             // 
-            this.btnFormClear.Location = new System.Drawing.Point(377, 374);
+            this.btnFormClear.Location = new System.Drawing.Point(283, 394);
             this.btnFormClear.Name = "btnFormClear";
             this.btnFormClear.Size = new System.Drawing.Size(75, 23);
             this.btnFormClear.TabIndex = 15;
@@ -185,7 +180,7 @@
             // 
             // btnUpdateUser
             // 
-            this.btnUpdateUser.Location = new System.Drawing.Point(488, 374);
+            this.btnUpdateUser.Location = new System.Drawing.Point(377, 394);
             this.btnUpdateUser.Name = "btnUpdateUser";
             this.btnUpdateUser.Size = new System.Drawing.Size(75, 23);
             this.btnUpdateUser.TabIndex = 16;
@@ -227,11 +222,50 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // rdoAdmin
+            // 
+            this.rdoAdmin.AutoSize = true;
+            this.rdoAdmin.Location = new System.Drawing.Point(283, 347);
+            this.rdoAdmin.Name = "rdoAdmin";
+            this.rdoAdmin.Size = new System.Drawing.Size(68, 21);
+            this.rdoAdmin.TabIndex = 21;
+            this.rdoAdmin.TabStop = true;
+            this.rdoAdmin.Text = "Admin";
+            this.rdoAdmin.UseVisualStyleBackColor = true;
+            this.rdoAdmin.CheckedChanged += new System.EventHandler(this.rdoAdmin_CheckedChanged);
+            // 
+            // rdoManager
+            // 
+            this.rdoManager.AutoSize = true;
+            this.rdoManager.Location = new System.Drawing.Point(399, 347);
+            this.rdoManager.Name = "rdoManager";
+            this.rdoManager.Size = new System.Drawing.Size(85, 21);
+            this.rdoManager.TabIndex = 22;
+            this.rdoManager.TabStop = true;
+            this.rdoManager.Text = "Manager";
+            this.rdoManager.UseVisualStyleBackColor = true;
+            this.rdoManager.CheckedChanged += new System.EventHandler(this.rdoManager_CheckedChanged);
+            // 
+            // rdoCashier
+            // 
+            this.rdoCashier.AutoSize = true;
+            this.rdoCashier.Location = new System.Drawing.Point(515, 347);
+            this.rdoCashier.Name = "rdoCashier";
+            this.rdoCashier.Size = new System.Drawing.Size(77, 21);
+            this.rdoCashier.TabIndex = 23;
+            this.rdoCashier.TabStop = true;
+            this.rdoCashier.Text = "Cashier";
+            this.rdoCashier.UseVisualStyleBackColor = true;
+            this.rdoCashier.CheckedChanged += new System.EventHandler(this.rdoCashier_CheckedChanged);
+            // 
             // Add_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 505);
+            this.Controls.Add(this.rdoCashier);
+            this.Controls.Add(this.rdoManager);
+            this.Controls.Add(this.rdoAdmin);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtDUser_id);
@@ -241,7 +275,6 @@
             this.Controls.Add(this.txtTNo);
             this.Controls.Add(this.txtNIC);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtType);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtUser_id);
@@ -274,7 +307,6 @@
         private System.Windows.Forms.TextBox txtUser_id;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtType;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtNIC;
         private System.Windows.Forms.TextBox txtTNo;
@@ -284,5 +316,8 @@
         private System.Windows.Forms.TextBox txtDUser_id;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.RadioButton rdoAdmin;
+        private System.Windows.Forms.RadioButton rdoManager;
+        private System.Windows.Forms.RadioButton rdoCashier;
     }
 }
