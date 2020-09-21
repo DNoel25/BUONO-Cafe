@@ -47,7 +47,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(68, 160);
+            this.lblName.Location = new System.Drawing.Point(242, 9);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(68, 25);
@@ -58,7 +58,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(68, 89);
+            this.label1.Location = new System.Drawing.Point(13, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 25);
@@ -68,18 +68,19 @@
             // btnsearch2
             // 
             this.btnsearch2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsearch2.Location = new System.Drawing.Point(634, 160);
+            this.btnsearch2.Location = new System.Drawing.Point(247, 83);
             this.btnsearch2.Margin = new System.Windows.Forms.Padding(4);
             this.btnsearch2.Name = "btnsearch2";
             this.btnsearch2.Size = new System.Drawing.Size(188, 32);
             this.btnsearch2.TabIndex = 11;
             this.btnsearch2.Text = "Search";
             this.btnsearch2.UseVisualStyleBackColor = true;
+            this.btnsearch2.Click += new System.EventHandler(this.btnsearch2_Click);
             // 
             // btnsearch1
             // 
             this.btnsearch1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsearch1.Location = new System.Drawing.Point(634, 89);
+            this.btnsearch1.Location = new System.Drawing.Point(18, 83);
             this.btnsearch1.Margin = new System.Windows.Forms.Padding(4);
             this.btnsearch1.Name = "btnsearch1";
             this.btnsearch1.Size = new System.Drawing.Size(188, 32);
@@ -90,18 +91,18 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(210, 167);
+            this.txtName.Location = new System.Drawing.Point(247, 44);
             this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(416, 22);
+            this.txtName.Size = new System.Drawing.Size(151, 22);
             this.txtName.TabIndex = 13;
             // 
             // txtEId
             // 
-            this.txtEId.Location = new System.Drawing.Point(210, 92);
+            this.txtEId.Location = new System.Drawing.Point(18, 44);
             this.txtEId.Margin = new System.Windows.Forms.Padding(4);
             this.txtEId.Name = "txtEId";
-            this.txtEId.Size = new System.Drawing.Size(416, 22);
+            this.txtEId.Size = new System.Drawing.Size(129, 22);
             this.txtEId.TabIndex = 12;
             // 
             // btnBack
@@ -161,12 +162,12 @@
             // EmployeeDataGridView
             // 
             this.EmployeeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.EmployeeDataGridView.Location = new System.Drawing.Point(73, 199);
+            this.EmployeeDataGridView.Location = new System.Drawing.Point(18, 132);
             this.EmployeeDataGridView.Name = "EmployeeDataGridView";
             this.EmployeeDataGridView.RowHeadersWidth = 51;
             this.EmployeeDataGridView.RowTemplate.Height = 24;
             this.EmployeeDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.EmployeeDataGridView.Size = new System.Drawing.Size(749, 228);
+            this.EmployeeDataGridView.Size = new System.Drawing.Size(866, 228);
             this.EmployeeDataGridView.TabIndex = 26;
             // 
             // SearchAndDeleteUser
