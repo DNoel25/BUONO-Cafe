@@ -36,7 +36,7 @@ namespace BUONO_CAFE2
 
         private void btnSeachUser_Click(object sender, EventArgs e)
         {
-            SearchUser s = new SearchUser();
+            SearchAndDeleteUser s = new SearchAndDeleteUser();
             s.Show();
             this.Hide();
         }
