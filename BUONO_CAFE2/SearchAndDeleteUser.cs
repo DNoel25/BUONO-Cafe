@@ -80,5 +80,35 @@ namespace BUONO_CAFE2
                 }
             }
         }
+
+        private void btnsearch2_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                SqlDataAdapter da = new SqlDataAdapter("Select User_Name from Users_Table where User_Name = '"+txtName.Text+"'",con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if(dt.Rows.Count == 0)
+                {
+                    MessageBox.Show("Employee Name is not exists!!!!!!!");
+                }
+                else
+                {
+                    SqlCommand cmd = new SqlCommand("SELECT * from Users_Table where User_Name = @User_Name",con);
+                    cmd.Parameters.AddWithValue("@User_Name",txtName.Text);
+
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    DataTable dt2 = new DataTable();
+                    SqlDataReader sdr = cmd.ExecuteReader();
+
+                    dt2.Load(sdr);
+                    con.Close();
+
+                    EmployeeDataGridView.DataSource = dt2;
+                }
+            }
+        }
     }
 }
