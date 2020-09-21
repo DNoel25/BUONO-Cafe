@@ -145,5 +145,10 @@ namespace BUONO_CAFE2
                 MessageBox.Show("Please select a product to delete", "Select?", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+             
+        }
     }
  }
