@@ -44,9 +44,6 @@
             this.txtTNo = new System.Windows.Forms.TextBox();
             this.btnFormClear = new System.Windows.Forms.Button();
             this.btnUpdateUser = new System.Windows.Forms.Button();
-            this.btnDeleteUser = new System.Windows.Forms.Button();
-            this.txtDUser_id = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.rdoAdmin = new System.Windows.Forms.RadioButton();
             this.rdoManager = new System.Windows.Forms.RadioButton();
@@ -118,7 +115,7 @@
             // 
             // btnAddUser
             // 
-            this.btnAddUser.Location = new System.Drawing.Point(161, 394);
+            this.btnAddUser.Location = new System.Drawing.Point(193, 438);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(75, 23);
             this.btnAddUser.TabIndex = 7;
@@ -170,7 +167,7 @@
             // 
             // btnFormClear
             // 
-            this.btnFormClear.Location = new System.Drawing.Point(283, 394);
+            this.btnFormClear.Location = new System.Drawing.Point(283, 398);
             this.btnFormClear.Name = "btnFormClear";
             this.btnFormClear.Size = new System.Drawing.Size(75, 23);
             this.btnFormClear.TabIndex = 15;
@@ -180,42 +177,16 @@
             // 
             // btnUpdateUser
             // 
-            this.btnUpdateUser.Location = new System.Drawing.Point(377, 394);
+            this.btnUpdateUser.Location = new System.Drawing.Point(374, 438);
             this.btnUpdateUser.Name = "btnUpdateUser";
             this.btnUpdateUser.Size = new System.Drawing.Size(75, 23);
             this.btnUpdateUser.TabIndex = 16;
             this.btnUpdateUser.Text = "UPDATE";
             this.btnUpdateUser.UseVisualStyleBackColor = true;
             // 
-            // btnDeleteUser
-            // 
-            this.btnDeleteUser.Location = new System.Drawing.Point(283, 431);
-            this.btnDeleteUser.Name = "btnDeleteUser";
-            this.btnDeleteUser.Size = new System.Drawing.Size(75, 23);
-            this.btnDeleteUser.TabIndex = 17;
-            this.btnDeleteUser.Text = "DELETE";
-            this.btnDeleteUser.UseVisualStyleBackColor = true;
-            this.btnDeleteUser.Click += new System.EventHandler(this.btnDeleteUser_Click);
-            // 
-            // txtDUser_id
-            // 
-            this.txtDUser_id.Location = new System.Drawing.Point(161, 432);
-            this.txtDUser_id.Name = "txtDUser_id";
-            this.txtDUser_id.Size = new System.Drawing.Size(100, 22);
-            this.txtDUser_id.TabIndex = 18;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(78, 434);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 17);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "User_id";
-            // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(377, 431);
+            this.btnBack.Location = new System.Drawing.Point(283, 438);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 23);
             this.btnBack.TabIndex = 20;
@@ -268,9 +239,6 @@
             this.Controls.Add(this.rdoManager);
             this.Controls.Add(this.rdoAdmin);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtDUser_id);
-            this.Controls.Add(this.btnDeleteUser);
             this.Controls.Add(this.btnUpdateUser);
             this.Controls.Add(this.btnFormClear);
             this.Controls.Add(this.txtTNo);
@@ -313,9 +281,6 @@
         private System.Windows.Forms.TextBox txtTNo;
         private System.Windows.Forms.Button btnFormClear;
         private System.Windows.Forms.Button btnUpdateUser;
-        private System.Windows.Forms.Button btnDeleteUser;
-        private System.Windows.Forms.TextBox txtDUser_id;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.RadioButton rdoAdmin;
         private System.Windows.Forms.RadioButton rdoManager;
