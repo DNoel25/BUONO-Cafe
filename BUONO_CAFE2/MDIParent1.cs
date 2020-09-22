@@ -96,6 +96,11 @@ namespace BUONO_CAFE2
         }
 
         private void MDIParent1_Load(object sender, EventArgs e)
+        { 
+
+        }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
