@@ -50,7 +50,7 @@ namespace BUONO_CAFE2
                         }
                         else 
                         {
-                            SearchAndDeleteUser sms = new SearchAndDeleteUser();
+                            Stocks sms = new Stocks();
                             sms.Show();
                             this.Hide();
 
