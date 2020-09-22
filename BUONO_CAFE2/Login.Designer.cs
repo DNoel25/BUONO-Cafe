@@ -41,7 +41,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(177, 75);
+            this.label1.Location = new System.Drawing.Point(79, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 17);
             this.label1.TabIndex = 0;
@@ -50,7 +50,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(180, 166);
+            this.label2.Location = new System.Drawing.Point(272, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 1;
@@ -59,7 +59,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(183, 236);
+            this.label3.Location = new System.Drawing.Point(79, 159);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 17);
             this.label3.TabIndex = 2;
@@ -67,21 +67,21 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(299, 75);
+            this.txtUserName.Location = new System.Drawing.Point(82, 87);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(121, 22);
             this.txtUserName.TabIndex = 3;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(299, 166);
+            this.txtPassword.Location = new System.Drawing.Point(275, 87);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(121, 22);
+            this.txtPassword.Size = new System.Drawing.Size(140, 22);
             this.txtPassword.TabIndex = 4;
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(512, 310);
+            this.btnClear.Location = new System.Drawing.Point(275, 211);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 7;
@@ -91,7 +91,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(367, 310);
+            this.btnLogin.Location = new System.Drawing.Point(82, 273);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 8;
@@ -106,7 +106,7 @@
             "admin",
             "manager",
             "cashier"});
-            this.comboBox1.Location = new System.Drawing.Point(299, 236);
+            this.comboBox1.Location = new System.Drawing.Point(82, 211);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 9;
