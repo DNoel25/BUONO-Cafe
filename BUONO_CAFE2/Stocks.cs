@@ -16,6 +16,7 @@ namespace BUONO_CAFE2
         public Stocks()
         {
             InitializeComponent();
+            timer1.Start();
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=BUONO_CAFE;Integrated Security=True");
@@ -149,6 +150,13 @@ namespace BUONO_CAFE2
         private void btnSearch_Click(object sender, EventArgs e)
         {
              
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime t = DateTime.Now;
+            this.lblTime.Text = t.ToString();
+
         }
     }
  }
