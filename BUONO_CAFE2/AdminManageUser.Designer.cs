@@ -31,6 +31,7 @@
             this.btnAddUser = new System.Windows.Forms.Button();
             this.btnUpdateUser = new System.Windows.Forms.Button();
             this.btnSeachUser = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAddUser
@@ -63,11 +64,22 @@
             this.btnSeachUser.UseVisualStyleBackColor = true;
             this.btnSeachUser.Click += new System.EventHandler(this.btnSeachUser_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(713, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 3;
+            this.btnBack.Text = "LogOut";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // AdminManageUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 438);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSeachUser);
             this.Controls.Add(this.btnUpdateUser);
             this.Controls.Add(this.btnAddUser);
@@ -83,5 +95,6 @@
         private System.Windows.Forms.Button btnAddUser;
         private System.Windows.Forms.Button btnUpdateUser;
         private System.Windows.Forms.Button btnSeachUser;
+        private System.Windows.Forms.Button btnBack;
     }
 }
