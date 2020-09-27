@@ -74,9 +74,11 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(275, 87);
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.txtPassword.Location = new System.Drawing.Point(268, 87);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(140, 22);
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(127, 23);
             this.txtPassword.TabIndex = 4;
             // 
             // btnClear
