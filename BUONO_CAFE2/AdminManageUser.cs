@@ -21,12 +21,14 @@ namespace BUONO_CAFE2
         {
             Add_User a = new Add_User("Add");
             a.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Add_User a = new Add_User("Update");
             a.Show();
+            this.Hide();
         }
 
         private void AdminManageUser_Load(object sender, EventArgs e)
@@ -38,6 +40,13 @@ namespace BUONO_CAFE2
         {
             SearchAndDeleteUser s = new SearchAndDeleteUser();
             s.Show();
+            this.Hide();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Login l = new Login();
+            l.Show();
             this.Hide();
         }
     }
