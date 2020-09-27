@@ -217,6 +217,7 @@
             this.btnManageUser.Text = "MANAGE USERS";
             this.btnManageUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnManageUser.UseVisualStyleBackColor = true;
+            this.btnManageUser.Click += new System.EventHandler(this.btnManageUser_Click);
             // 
             // btnSell
             // 
