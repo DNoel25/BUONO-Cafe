@@ -50,8 +50,8 @@ namespace BUONO_CAFE2
                         }
                         else 
                         {
-                            Stocks sms = new Stocks();
-                            sms.Show();
+                            ManagerFront mf = new ManagerFront();
+                            mf.Show();
                             this.Hide();
 
                         }
