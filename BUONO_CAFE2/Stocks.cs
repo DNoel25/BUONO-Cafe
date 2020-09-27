@@ -158,5 +158,12 @@ namespace BUONO_CAFE2
             this.lblTime.Text = t.ToString();
 
         }
+
+        private void btnManageUser_Click(object sender, EventArgs e)
+        {
+            AdminManageUser amu = new AdminManageUser();
+            amu.Show();
+            this.Hide();
+        }
     }
  }
