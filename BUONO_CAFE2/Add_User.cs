@@ -65,7 +65,7 @@ namespace BUONO_CAFE2
                     else
                     {
                         con.Open();
-                        SqlCommand cmd = new SqlCommand("Insert into Users_Table values(@User_id , @User_Name,@User_Password,@User_type,@user_Email,@User_NIC,@User_TNo)",con);
+                        SqlCommand cmd = new SqlCommand("Insert into Users_Table values(@User_id , @User_Name,@User_Password,@User_type,@user_Email,@User_NIC,@User_TNo,@User_Leavel)", con);
                         cmd.Parameters.AddWithValue("@User_id",txtUser_id.Text);
                         cmd.Parameters.AddWithValue("@User_Name", txtName.Text);
                         cmd.Parameters.AddWithValue("@User_Password", txtPassword.Text);
@@ -73,6 +73,9 @@ namespace BUONO_CAFE2
                         cmd.Parameters.AddWithValue("@User_Email", txtEmail.Text);
                         cmd.Parameters.AddWithValue("@User_NIC", txtNIC.Text);
                         cmd.Parameters.AddWithValue("@User_TNo", txtTNo.Text);
+                        cmd.Parameters.AddWithValue("@User_Leavel", txtUserLevel.Text);
+
+                        
 
                         int result = cmd.ExecuteNonQuery();
                         con.Close();
@@ -94,6 +97,7 @@ namespace BUONO_CAFE2
             txtEmail.Clear();
             txtNIC.Clear();
             txtTNo.Clear();
+            txtUserLevel.Text = "";
         }
 
         private bool IsEmailValid(string m)
@@ -134,27 +138,39 @@ namespace BUONO_CAFE2
             rdoAdmin.Checked = false;
             rdoManager.Checked = false;
             rdoCashier.Checked = false;
-            
 
+           
 
         }
 
         private void rdoAdmin_CheckedChanged(object sender, EventArgs e)
         {
             UserType = "Admin";
+            txtUserLevel.Text = "1";
+
+                
         }
 
         private void rdoManager_CheckedChanged(object sender, EventArgs e)
         {
             UserType = "Manager";
+            txtUserLevel.Text = "2";
+
         }
 
         private void rdoCashier_CheckedChanged(object sender, EventArgs e)
         {
             UserType = "Cashier";
+            txtUserLevel.Text = "3";
+
         }
 
         private void btnDeleteUser_Click(object sender, EventArgs e)
+        {
+             
+        }
+
+        private void btnUpdateUser_Click(object sender, EventArgs e)
         {
              
         }
