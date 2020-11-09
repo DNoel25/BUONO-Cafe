@@ -32,6 +32,7 @@
             this.btnUpdateUser = new System.Windows.Forms.Button();
             this.btnSeachUser = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.lblpower = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAddUser
@@ -74,19 +75,31 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // lblpower
+            // 
+            this.lblpower.AutoSize = true;
+            this.lblpower.Location = new System.Drawing.Point(128, 12);
+            this.lblpower.Name = "lblpower";
+            this.lblpower.Size = new System.Drawing.Size(46, 17);
+            this.lblpower.TabIndex = 4;
+            this.lblpower.Text = "label1";
+            this.lblpower.Visible = false;
+            // 
             // AdminManageUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 438);
+            this.Controls.Add(this.lblpower);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSeachUser);
             this.Controls.Add(this.btnUpdateUser);
             this.Controls.Add(this.btnAddUser);
             this.Name = "AdminManageUser";
-            this.Text = "Admin";
+            this.Text = "User Management";
             this.Load += new System.EventHandler(this.AdminManageUser_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -96,5 +109,6 @@
         private System.Windows.Forms.Button btnUpdateUser;
         private System.Windows.Forms.Button btnSeachUser;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label lblpower;
     }
 }
