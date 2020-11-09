@@ -12,6 +12,8 @@ namespace BUONO_CAFE2
 {
     public partial class AdminManageUser : Form
     {
+        public static string Uleavelpoer = "manager";
+
         public AdminManageUser()
         {
             InitializeComponent();
@@ -33,6 +35,13 @@ namespace BUONO_CAFE2
 
         private void AdminManageUser_Load(object sender, EventArgs e)
         {
+            lblpower.Text = MDIParent1.UleavelManager;
+
+            if (Uleavelpoer == lblpower.Text)
+            {
+                btnBack.Visible = false;
+            }
+
 
         }
 
@@ -46,7 +55,21 @@ namespace BUONO_CAFE2
         private void btnBack_Click(object sender, EventArgs e)
         {
             Login l = new Login();
-            l.Show();
+            //AdminManageUser am = new AdminManageUser();
+            //if (l.comboBox1.SelectedIndex == 0)
+            //{
+            //    am.btnBack.Enabled = true;
+            //}
+            //else if (l.comboBox1.SelectedIndex == 1)
+            //{
+            //    am.btnBack.Enabled = false;
+
+            //}
+            // else {
+            ///    am.btnBack.Enabled = false;
+            //}
+
+            l.Dispose();
             this.Hide();
         }
     }
