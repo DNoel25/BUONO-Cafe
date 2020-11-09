@@ -48,6 +48,7 @@
             this.rdoAdmin = new System.Windows.Forms.RadioButton();
             this.rdoManager = new System.Windows.Forms.RadioButton();
             this.rdoCashier = new System.Windows.Forms.RadioButton();
+            this.txtUserLevel = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -141,6 +142,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(283, 142);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(255, 22);
             this.txtPassword.TabIndex = 10;
             // 
@@ -183,6 +185,7 @@
             this.btnUpdateUser.TabIndex = 16;
             this.btnUpdateUser.Text = "UPDATE";
             this.btnUpdateUser.UseVisualStyleBackColor = true;
+            this.btnUpdateUser.Click += new System.EventHandler(this.btnUpdateUser_Click);
             // 
             // btnBack
             // 
@@ -230,11 +233,19 @@
             this.rdoCashier.UseVisualStyleBackColor = true;
             this.rdoCashier.CheckedChanged += new System.EventHandler(this.rdoCashier_CheckedChanged);
             // 
+            // txtUserLevel
+            // 
+            this.txtUserLevel.Location = new System.Drawing.Point(652, 420);
+            this.txtUserLevel.Name = "txtUserLevel";
+            this.txtUserLevel.Size = new System.Drawing.Size(28, 22);
+            this.txtUserLevel.TabIndex = 24;
+            // 
             // Add_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 505);
+            this.Controls.Add(this.txtUserLevel);
             this.Controls.Add(this.rdoCashier);
             this.Controls.Add(this.rdoManager);
             this.Controls.Add(this.rdoAdmin);
@@ -285,5 +296,6 @@
         private System.Windows.Forms.RadioButton rdoAdmin;
         private System.Windows.Forms.RadioButton rdoManager;
         private System.Windows.Forms.RadioButton rdoCashier;
+        private System.Windows.Forms.TextBox txtUserLevel;
     }
 }
