@@ -37,32 +37,38 @@
             // 
             // btnAddUser
             // 
+            this.btnAddUser.BackColor = System.Drawing.Color.Black;
+            this.btnAddUser.ForeColor = System.Drawing.Color.Brown;
             this.btnAddUser.Location = new System.Drawing.Point(249, 80);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(290, 55);
             this.btnAddUser.TabIndex = 0;
             this.btnAddUser.Text = "ADD USER";
-            this.btnAddUser.UseVisualStyleBackColor = true;
+            this.btnAddUser.UseVisualStyleBackColor = false;
             this.btnAddUser.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnUpdateUser
             // 
+            this.btnUpdateUser.BackColor = System.Drawing.Color.Black;
+            this.btnUpdateUser.ForeColor = System.Drawing.Color.Brown;
             this.btnUpdateUser.Location = new System.Drawing.Point(255, 198);
             this.btnUpdateUser.Name = "btnUpdateUser";
             this.btnUpdateUser.Size = new System.Drawing.Size(290, 55);
             this.btnUpdateUser.TabIndex = 1;
             this.btnUpdateUser.Text = "UPDATE USER";
-            this.btnUpdateUser.UseVisualStyleBackColor = true;
+            this.btnUpdateUser.UseVisualStyleBackColor = false;
             this.btnUpdateUser.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnSeachUser
             // 
+            this.btnSeachUser.BackColor = System.Drawing.Color.Black;
+            this.btnSeachUser.ForeColor = System.Drawing.Color.Brown;
             this.btnSeachUser.Location = new System.Drawing.Point(255, 307);
             this.btnSeachUser.Name = "btnSeachUser";
             this.btnSeachUser.Size = new System.Drawing.Size(290, 55);
             this.btnSeachUser.TabIndex = 2;
             this.btnSeachUser.Text = "SEARCH USER";
-            this.btnSeachUser.UseVisualStyleBackColor = true;
+            this.btnSeachUser.UseVisualStyleBackColor = false;
             this.btnSeachUser.Click += new System.EventHandler(this.btnSeachUser_Click);
             // 
             // btnBack
@@ -89,6 +95,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::BUONO_CAFE2.Properties.Resources.Login;
             this.ClientSize = new System.Drawing.Size(800, 438);
             this.Controls.Add(this.lblpower);
             this.Controls.Add(this.btnBack);
