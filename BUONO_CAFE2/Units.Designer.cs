@@ -39,9 +39,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
             this.label1.Location = new System.Drawing.Point(76, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 17);
+            this.label1.Size = new System.Drawing.Size(81, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Unit";
             // 
@@ -54,17 +57,21 @@
             // 
             // btnAddUnit
             // 
+            this.btnAddUnit.BackColor = System.Drawing.Color.Black;
+            this.btnAddUnit.ForeColor = System.Drawing.SystemColors.Window;
             this.btnAddUnit.Location = new System.Drawing.Point(187, 108);
             this.btnAddUnit.Name = "btnAddUnit";
-            this.btnAddUnit.Size = new System.Drawing.Size(75, 23);
+            this.btnAddUnit.Size = new System.Drawing.Size(78, 28);
             this.btnAddUnit.TabIndex = 2;
             this.btnAddUnit.Text = "Add Unit";
-            this.btnAddUnit.UseVisualStyleBackColor = true;
+            this.btnAddUnit.UseVisualStyleBackColor = false;
             this.btnAddUnit.Click += new System.EventHandler(this.btnAddUnit_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Black;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.WindowText;
             this.dataGridView1.Location = new System.Drawing.Point(388, 36);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -75,18 +82,21 @@
             // 
             // btnDeleteUnit
             // 
+            this.btnDeleteUnit.BackColor = System.Drawing.Color.Black;
+            this.btnDeleteUnit.ForeColor = System.Drawing.SystemColors.Window;
             this.btnDeleteUnit.Location = new System.Drawing.Point(388, 297);
             this.btnDeleteUnit.Name = "btnDeleteUnit";
             this.btnDeleteUnit.Size = new System.Drawing.Size(208, 37);
             this.btnDeleteUnit.TabIndex = 4;
             this.btnDeleteUnit.Text = "Delete Selected Unit";
-            this.btnDeleteUnit.UseVisualStyleBackColor = true;
+            this.btnDeleteUnit.UseVisualStyleBackColor = false;
             this.btnDeleteUnit.Click += new System.EventHandler(this.btnDeleteUnit_Click);
             // 
             // Units
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::BUONO_CAFE2.Properties.Resources.Login;
             this.ClientSize = new System.Drawing.Size(836, 451);
             this.Controls.Add(this.btnDeleteUnit);
             this.Controls.Add(this.dataGridView1);
